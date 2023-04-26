@@ -23,9 +23,7 @@
 
 <div class="step-title">Create, populate, and query a "good" table</div>
 
-Create a correct table to facilitate querying for videos by tag within a given year range returning the results in descending order by year.
-
-✅ Let's remove the data from our table using `TRUNCATE`:
+✅ Create a correct table to facilitate querying for videos by tag within a given year range returning the results in descending order by year:
 ```
 CREATE TABLE videos_by_tag_year ( 
   tag text,
@@ -41,7 +39,8 @@ CREATE TABLE videos_by_tag_year (
 
 ✅ Execute the following `COPY` command to import `videos_by_tag_year.csv` file:
 ```
-COPY assets/videos_by_tag_year FROM 'videos_by_tag_year.csv' WITH HEADER=true;
+COPY videos_by_tag_year (tag, added_year, video_id, added_date, description, title, user_id) 
+FROM 'assets/videos_by_tag_year.csv' WITH HEADER=true;
 ```
 
 ✅ Check the number of rows in the `videos_by_tag_year` table:
