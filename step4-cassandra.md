@@ -41,7 +41,7 @@ CREATE TABLE videos_by_tag_year (
 
 ✅ Execute the following `COPY` command to import `videos_by_tag_year.csv` file:
 ```
-COPY videos_by_tag_year FROM 'videos_by_tag_year.csv' WITH HEADER=true;
+COPY assets/videos_by_tag_year FROM 'videos_by_tag_year.csv' WITH HEADER=true;
 ```
 
 ✅ Check the number of rows in the `videos_by_tag_year` table:

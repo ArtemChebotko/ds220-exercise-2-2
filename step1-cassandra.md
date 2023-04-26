@@ -44,8 +44,6 @@ The columns are as follows:
 cat assets/videos_by_tag_year.csv
 ```
 
-IMPORTANT: Notice the order of the columns matches the order shown above.
-
 
 <!-- NAVIGATION -->
 <div id="navigation-bottom" class="navigation-bottom">

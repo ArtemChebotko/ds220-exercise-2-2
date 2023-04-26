@@ -50,7 +50,7 @@ NOTE: Notice the column order differs from the `CREATE TABLE` statement. Cassand
 ✅ Execute the following `COPY` command to import `videos_by_tag_year.csv` file:
 ```
 COPY bad_videos_by_tag_year (tag, added_year, video_id, added_date, description, title, user_id) 
-FROM 'videos_by_tag_year.csv' WITH HEADER=true;
+FROM 'assets/videos_by_tag_year.csv' WITH HEADER=true;
 ```
 
 NOTE: We must explicitly list the column names because this table schema no longer matches the CSV structure.
