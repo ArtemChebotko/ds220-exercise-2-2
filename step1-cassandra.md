@@ -41,7 +41,7 @@ The columns are as follows:
 
 ✅ Review the contents of the CSV file with video metadata:
 ```
-cat assets/videos_by_tag_year.csv
+head -n 10 assets/videos_by_tag_year.csv
 ```
 
 
